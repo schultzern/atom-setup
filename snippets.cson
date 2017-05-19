@@ -1,0 +1,96 @@
+################################################################################
+#                   NOVA Snippets for Atom Editor                              #
+#------------------------------------------------------------------------------#
+#                   By:         Eirik Schultz                                  #
+#                   Created:    17-Jan-2017                                    #
+#                   For:        Indra Navia AS - Tower                         #
+################################################################################
+#
+# START C++ Snippets
+#
+# ------------------------------------------------------------------------------
+# NOVA Legal snippet
+'.source.c, .source.cpp, .source.cc, .souce.objcpp, .source.objc':
+  'NOVA Legal Header':
+    'prefix': 'nova-legal'
+    'body': """
+      // -*-C++-*-
+      //-----------------------------------------------------------------------------
+      /*
+          Author(s):    ${1:Ola Nordmann}
+          Created:      ${2:Date}
+          Release: 	    $Revision$
+          Modified:	    $Date$
+          Path:    	    $Source$
+          
+          Code Review by: <name, date>
+          
+          (c) Copyright 2017, Indra Navia AS, all rights reserved.*/
+      //------------------------------------------------------------------------------
+    """
+# ------------------------------------------------------------------------------
+# NOVA Function example 1
+  'NOVA Function Ex. 1':
+    'prefix': 'nova-func1'
+    'body': """
+      /************************************************************
+      
+                         ${1:FUNCTION_NAME}
+       
+      *************************************************************
+      
+      What is this function doing?
+      Does it change global variables?
+      Does it depend on other modules?
+      Does it have side effects?
+      (detailed description)
+       
+      ************************************************************/
+      // 
+      //
+      ${2:int} ${3:function_name}(${4:int32 *ptr_i, /* What is this pointing at? */
+                        int16 i2,         /* What does i2 contain? */
+                        float64 d         /* What is this doing ?? */})
+      {
+          //
+          ${5: register short k1; /* What does this contain */}
+          ${6:/* ... */}
+          //
+      } /* End of f1() */ 
+    """
+# ------------------------------------------------------------------------------
+# NOVA Function example 2
+  'NOVA Function Ex. 2':
+    'prefix': 'nova-func2'
+    'body': """
+      /************************************************************
+      
+                         ${1:FUNCTION_NAME}
+       
+      *************************************************************
+
+      What is this function doing?
+      Does it change global variables?
+      Does it depend on other modules?
+      Does it have side effects?
+      (detailed description)
+      What is this pointing at?
+      What does i2 contain?
+      What is this doing ??
+ 
+      ************************************************************/
+
+      ${2:int16} ${3:*function_name}(${4:int32   *ptr_i,
+             int16   i2,
+             float64 d})
+      {
+          //
+          ${5: register short k1; /* What does this contain */}
+          ${6:/* ... */}
+          //
+      } /* End of f1() */ 
+    """
+# ------------------------------------------------------------------------------
+#
+# END C++ Snippets
+#

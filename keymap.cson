@@ -1,0 +1,71 @@
+# various keybindings accessable anywhere
+'.platform-linux, editor, atom-text-editor, atom-workspace, .terminal-fusion, 
+ .terminal':
+  'f11': 'window:toggle-full-screen'
+  'f5': 'window:reload'
+  'alt-shift-P': 'project-manager:list-projects'
+#
+'atom-text-editor:not([mini])':
+  'alt-shift-B': 'git-blame:toggle'
+  'shift-enter': 'project-manager:alt-confirm'
+  'alt-shift-D': 'split-diff:toggle'
+  'ctrl-<': 'editor:scroll-to-cursor'
+# linter keybindings.
+  'alt-x': 'linter-ui-default:toggle-panel'
+  # 'alt-shift-L': 'linter:toggle'
+  # 'alt-shift-L': 'linter:lint'
+  'alt-z': 'linter-ui-default:next'
+  'alt-c': 'linter-ui-default:previous'
+  'alt-a': 'linter-ui-default:apply-all-solutions'
+# git-control
+  'alt-shift-G': 'git-control:toggle'
+###############################################################################
+# term3 keybindings
+'atom-text-editor atom-workspace':
+  'ctrl-* 5': 'term3:open'
+  'ctrl-* 6': 'term3:open-split-right'
+  'ctrl-* 4': 'term3:open-split-left'
+  'ctrl-* 8': 'term3:open-split-up'
+  'ctrl-* 2': 'term3:open-split-down'
+'.term3':
+  'ctrl-shift-c': 'term3:copy'
+  'ctrl-shift-v': 'term3:paste'
+###############################################################################
+# terminal-fusion keybindings
+'.platform-linux, atom-workspace':
+  'alt-t n': 'terminal-fusion:new'
+  'alt-t k': 'terminal-fusion:prev'
+  'alt-t j': 'terminal-fusion:next'
+  'alt-t x': 'terminal-fusion:close'
+  'alt-t t': 'terminal-fusion:toggle'
+#
+'.platform-linux, .terminal-fusion, .terminal':
+  'ctrl-shift-V': 'terminal-fusion:paste'
+  'ctrl-shift-C': 'terminal-fusion:copy'
+  'ctrl-enter': 'terminal-fusion:insert-selected-text'
+###############################################################################
+# pane navigation
+'body':
+  'cmd-right': 'window:focus-pane-on-right'
+  'cmd-left': 'window:focus-pane-on-left'
+  'cmd-up': 'window:focus-pane-above'
+  'cmd-down': 'window:focus-pane-below'
+  'cmd-n': 'window:focus-next-pane'
+  'cmd-p': 'window:focus-previous-pane'
+  'cmd-k right': 'pane:split-right'
+  'cmd-k left': 'pane:split-left'
+  'cmd-k up': 'pane:split-up'
+  'cmd-k down': 'pane:split-down'
+###############################################################################
+# atom-rtags-plus
+'atom-workspace':
+  'alt-,': 'atom-rtags-plus:find-symbol-at-point'
+  'alt-.': 'atom-rtags-plus:find-references-at-point'
+  'alt-/': 'atom-rtags-plus:find-all-references-at-point'
+  'alt-r': 'atom-rtags-plus:refactor-at-point'
+  'alt-\'': 'atom-rtags-plus:get-symbol-info'
+  'alt-v': 'atom-rtags-plus:find-virtuals-at-point'
+  'alt-k': 'atom-rtags-plus:find-symbols-by-keyword'
+  'alt-l': 'atom-rtags-plus:find-references-by-keyword'
+  'alt-i': 'atom-rtags-plus:reindex_current_file'
+###############################################################################t=

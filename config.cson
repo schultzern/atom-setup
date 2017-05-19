@@ -1,0 +1,277 @@
+"*":
+  "atom-beautify":
+    cpp:
+      default_beautifier: "clang-format"
+    general:
+      _analyticsUserId: "a209d48f-b747-4e0d-b731-55f94a76c0ab"
+  "atom-rtags-plus": {}
+  "atomic-rtags":
+    rdmAutoSpawn: true
+  "autocomplete-clang":
+    includePaths: [
+      "."
+      "./include"
+      "./inc"
+    ]
+  "autocomplete-plus":
+    confirmCompletion: "tab always, enter when suggestion explicitly selected"
+  build:
+    beepWhenDone: true
+    notificationOnRefresh: true
+    refreshOnShowTargetList: true
+    saveOnBuild: true
+    scrollOnError: true
+    selectTriggers: false
+  "build-make": {}
+  "config-import-export":
+    defaultPath:
+      darwin: ""
+      freebsd: ""
+      linux: "/export/home/esc/AtomBackups"
+      sunos: ""
+      win32: ""
+  core:
+    autoHideMenuBar: true
+    closeEmptyWindows: false
+    customFileFypes:
+      "source.cpp": [
+        "h"
+      ]
+    disabledPackages: [
+      "whitespace"
+      "metrics"
+      "atom-debugger"
+      "emacs-plus"
+      "terminal-plus"
+      "symbols-view"
+      "atom-rtags"
+      "atomic-rtags"
+      "linter-gcc"
+      "linter-write-good"
+      "linter-less"
+      "linter-clang"
+      "linter-mixed-indent"
+      "tool-bar"
+      "project-plus"
+      "editorconfig"
+      "language-cpp14"
+      "tree-view-git-branch"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      ".pioenvs"
+      ".piolibdeps"
+      ".gcc-flags.json"
+      ""
+    ]
+    packagesWithKeymapsDisabled: [
+      "git-blame"
+      "atom-beautify"
+      "git-history"
+      "term3"
+      "terminal-fusion"
+      "atom-rtags-plus"
+      "linter"
+      "dbg"
+      "atom-keyboard-macros"
+      "git-time-machine"
+    ]
+    projectHome: "/export/home/esc/ws/"
+    telemetryConsent: "limited"
+  "custom-title":
+    template: "<%= username %> @ <%= hostname %> : <%= fileName %><% if (projectPath) { %> - <%= projectPath %><% } %>"
+  "disable-keybindings": {}
+  editor:
+    atomicSoftTabs: false
+    autoIndent: false
+    autoIndentOnPaste: false
+    fontFamily: "hack"
+    fontSize: 12
+    invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    softWrapHangingIndent: 2
+    tabLength: 4
+    tabType: "soft"
+    zoomFontWhenCtrlScrolling: false
+  "exception-reporting":
+    userId: "1251050e-050e-0168-0c14-a8fb412c3765"
+  fonts:
+    fontFamily: "Hack"
+  "git-blame":
+    customCommitUrlTemplateString: "http://nanna/cgi-bin/gitweb.cgi?p=<%- project %>/<%- repo %>.git;a=commit;h=<%- revision %>"
+    dateFormatString: "DD-MM-YYYY"
+    showOnlyLastNames: true
+    useCustomUrlTemplateIfStandardRemotesFail: true
+  "git-control":
+    showGitFlowButton: false
+  "git-diff":
+    showIconsInEditorGutter: true
+  "git-history":
+    maxCommits: 20
+    showDiff: false
+  "git-plus":
+    experimental:
+      useSplitDiff: true
+    general:
+      _analyticsUserId: "57baeab5-965c-447e-a7a0-afc5a766152b"
+    remoteInteractions:
+      pullBeforePush: true
+      pullRebase: true
+  linter: {}
+  "linter-clang":
+    clangIncludePaths: [
+      "./"
+      "./inc"
+      "./include"
+      "-/"
+      "-/inc"
+      "-/include"
+    ]
+    execPath: "/usr/lib64/ccache/clang"
+    verboseDebug: true
+  "linter-eslint":
+    eslintrcPath: "./"
+    globalNodePath: "/usr"
+    lintHtmlFiles: true
+  "linter-gcc":
+    compileCommandsFile: "./compile_commands.json"
+    execPath: "/usr/lib64/ccache/g++"
+    gccIncludePaths: " ./,./inc,./include,-/inc,-/include, "
+    gccLintOnTheFly: true
+  "linter-mixed-indent":
+    forceIndentationType: "spaces"
+    ignoreComments: true
+  "linter-ui-default":
+    panelHeight: 161
+    showPanel: true
+    showProviderName: true
+  "linter-write-good":
+    severityLevel: "Info"
+  minimap:
+    absoluteMode: true
+    plugins:
+      "find-and-replace": true
+      "find-and-replaceDecorationsZIndex": 0
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+      "split-diff": true
+      "split-diffDecorationsZIndex": 0
+  "minimap-git-diff":
+    useGutterDecoration: true
+  "package-sync":
+    createOnChange: true
+    forceOverwrite: true
+  pigments:
+    dismissableReloadNotifications: false
+  "platformio-ide-terminal":
+    core:
+      autoRunCommand: "export PATH=/export/home/esc/.atom/packages/platformio-ide/penv/bin:/usr/lib64/qt-3.3/bin:/usr/lib64/ccache:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/sbin:/export/home/esc/bin:/export/home/esc/scripts:/usr/local/Trolltech/Qt-4/bin:/export/home/esc/ws/Install2/nova-os/packages/scripts/scripts:/export/home/esc/.local/bin:/export/home/esc/bin:/usr/local/bin"
+  "project-manager":
+    alwaysOpenInSameWindow: true
+    sortBy: "group"
+  "project-plus":
+    autoDiscover: false
+    showPath: true
+  "split-diff":
+    diffWords: true
+    hideTreeView: true
+    ignoreWhitespace: true
+    leftEditorColor: "red"
+    rightEditorColor: "green"
+    scrollSyncType: "Vertical + Horizontal"
+    syncHorizontalScroll: true
+  "status-bar": {}
+  susave:
+    sudoGui: "pkexec"
+  "switch-header-source":
+    samePane: true
+  "tabs-to-spaces": {}
+  term3:
+    colors:
+      background: "#282c34"
+      brightBlue: "#7ac2ff"
+      brightCyan: "#00fffb"
+      brightGreen: "#06ff67"
+      brightPurple: "#ce65da"
+      brightRed: "#ff3c33"
+      brightWhite: "#ffffff"
+      brightYellow: "#fffb00"
+      foreground: "#abb2bf"
+      normalBlack: "#0f1011"
+      normalBlue: "#3b5998"
+      normalCyan: "#56b6c2"
+      normalGreen: "#98c379"
+      normalPurple: "#c678dd"
+      normalRed: "#e06c75"
+      normalWhite: "#ffffff"
+      normalYellow: "#ffff00"
+    fontFamily: "DejaVu Sans Mono"
+    fontSize: "12"
+    titleTemplate: "Term: {{ hostName }}"
+  "terminal-fusion":
+    core: {}
+    style:
+      fontFamily: "Hack"
+      fontSize: "12"
+  "terminal-plus":
+    ansiColors:
+      normal: {}
+    core: {}
+    style: {}
+    toggles:
+      cursorBlink: false
+  "todo-show":
+    sortAscending: false
+    sortBy: "Type"
+  "tool-bar":
+    position: "Left"
+    visible: false
+  "tree-view":
+    hideIgnoredNames: true
+  "tree-view-git-branch":
+    separator: true
+  welcome:
+    showOnStartup: false
+".c.source":
+  editor:
+    showIndentGuide: true
+    softWrap: true
+    softWrapAtPreferredLineLength: false
+    softWrapHangingIndent: 2
+    tabLength: 4
+".coffee.source":
+  editor:
+    softWrapAtPreferredLineLength: false
+    tabLength: 2
+".cpp.source":
+  editor:
+    showIndentGuide: true
+    softWrap: true
+    softWrapAtPreferredLineLength: false
+    softWrapHangingIndent: 2
+    tabLength: 8
+".diff":
+  editor:
+    tabLength: 4
+".diff.source":
+  editor:
+    tabLength: 4
+".ini.source":
+  editor:
+    tabLength: 8
+".litcoffee.source":
+  editor:
+    softWrapHangingIndent: 2
+    tabLength: 4
+".plain.text":
+  editor:
+    showIndentGuide: true
