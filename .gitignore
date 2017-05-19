@@ -1,0 +1,12 @@
+compile-cache
+storage
+packages
+.*
+.DS_Store
+._*
+atom-shell
+.bug-report.token
+node_modules
+blob-store
+
+!.gitignore
