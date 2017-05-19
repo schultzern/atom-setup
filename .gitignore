@@ -8,5 +8,9 @@ atom-shell
 .bug-report.token
 node_modules
 blob-store
+split-diff
+recovery
+git-time-machine
+nohup.out
 
 !.gitignore
