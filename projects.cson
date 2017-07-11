@@ -1,37 +1,37 @@
 [
   {
     title: "Atom User Config"
-    group: "Atom"
+    group: "Editor Config"
     paths: [
-      "/export/home/esc/.atom"
+      "~/.atom"
     ]
   }
   {
     title: "nova2000"
     group: "SWR11"
     paths: [
-      "/export/home/esc/ws/nova-r11/nova2000"
+      "~/ws/nova-r11/nova2000"
     ]
   }
   {
     title: "RANCRDPlinux"
     group: "RANC"
     paths: [
-      "/export/home/esc/ws/RANCRDPlinux"
+      "~/ws/RANCRDPlinux"
     ]
   }
   {
     title: "NOVAAirport"
-    group: "Config"
+    group: "NOVA Config"
     paths: [
-      "/export/home/esc/ws/Install2/NOVAAirport"
+      "~/ws/Install2/NOVAAirport"
     ]
   }
   {
     title: "Install 2"
-    group: "Config"
+    group: "NOVA Config"
     paths: [
-      "/export/home/esc/ws/Install2"
+      "~/ws/Install2"
     ]
   }
   {
@@ -45,42 +45,42 @@
     title: "CWP"
     group: "SWR11"
     paths: [
-      "/export/home/esc/ws/nova-r11/nova2000/cwp"
+      "~/ws/nova-r11/nova2000/cwp"
     ]
   }
   {
     title: "nova-os"
-    group: "Config"
+    group: "NOVA OS"
     paths: [
-      "/export/home/esc/ws/Install2/nova-os"
+      "~/ws/Install2/nova-os"
     ]
   }
   {
     title: "nova2000"
     group: "SWR10"
     paths: [
-      "/export/home/esc/ws/nova-r10/nova2000"
+      "~/ws/nova-r10/nova2000"
     ]
   }
   {
     title: "atom-rtags-plus"
-    group: "Atom"
+    group: "Atom Packages"
     paths: [
-      "/export/home/esc/github/forked/atom-rtags-plus"
+      "~/github/forked/atom-rtags-plus"
     ]
   }
   {
     title: "bugzilla-number"
-    group: "Atom"
+    group: "Atom Packages"
     paths: [
-      "/export/home/esc/github/forked/bugzilla-number"
+      "~/github/forked/bugzilla-number"
     ]
   }
   {
     title: "language-c"
-    group: "Atom"
+    group: "Atom Packages"
     paths: [
-      "/export/home/esc/github/forked/language-c"
+      "~/github/forked/language-c"
     ]
   }
   {
@@ -92,16 +92,16 @@
   }
   {
     title: "pragueASMGCS"
-    group: "config"
+    group: "NOVA Config"
     paths: [
-      "/export/home/esc/ws/Install2/pragueASMGCS"
+      "~/ws/Install2/pragueASMGCS"
     ]
   }
   {
     title: "custom-window-title"
-    group: "Atom"
+    group: "Atom Packages"
     paths: [
-      "/export/home/esc/github/forked/custom-window-title"
+      "~/github/forked/custom-window-title"
     ]
   }
 ]
