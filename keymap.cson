@@ -4,6 +4,7 @@
   'f11': 'window:toggle-full-screen'
   'f5': 'window:reload'
   'alt-shift-P': 'project-manager:list-projects'
+  'alt-shift-F': 'maximize-panes:maximize'
 #
 'atom-text-editor:not([mini])':
   'alt-shift-B': 'git-blame:toggle'
@@ -59,7 +60,11 @@
 ###############################################################################
 # atom-rtags-plus
 'atom-workspace':
-  'alt-,': 'atom-rtags-plus:find-symbol-at-point'
+  'alt-, .': 'atom-rtags-plus:find-symbol-at-point'
+  'alt-, right' : 'atom-rtags-plus:find-symbol-at-point-split-right'
+  'alt-, left' : 'atom-rtags-plus:find-symbol-at-point-split-left'
+  'alt-, down' : 'atom-rtags-plus:find-symbol-at-point-split-down'
+  'alt-, up' : 'atom-rtags-plus:find-symbol-at-point-split-up'
   'alt-.': 'atom-rtags-plus:find-references-at-point'
   'alt-/': 'atom-rtags-plus:find-all-references-at-point'
   'alt-r': 'atom-rtags-plus:refactor-at-point'
@@ -67,5 +72,6 @@
   'alt-v': 'atom-rtags-plus:find-virtuals-at-point'
   'alt-k': 'atom-rtags-plus:find-symbols-by-keyword'
   'alt-l': 'atom-rtags-plus:find-references-by-keyword'
-  'alt-i': 'atom-rtags-plus:reindex_current_file'
+  'alt-i': 'atom-rtags-plus:reindex-current-file'
+  'alt-f': 'atom-rtags-plus:apply-fixit'
 ###############################################################################t=

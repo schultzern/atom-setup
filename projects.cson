@@ -66,7 +66,7 @@
     title: "atom-rtags-plus"
     group: "Atom"
     paths: [
-      "/export/home/esc/github/non_forked/atom-rtags-plus"
+      "/export/home/esc/github/forked/atom-rtags-plus"
     ]
   }
   {
@@ -98,10 +98,10 @@
     ]
   }
   {
-    title: "custom-title"
+    title: "custom-window-title"
     group: "Atom"
     paths: [
-      "/export/home/esc/github/forked/custom-title"
+      "/export/home/esc/github/forked/custom-window-title"
     ]
   }
 ]

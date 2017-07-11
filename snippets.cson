@@ -10,15 +10,15 @@
 #
 # ------------------------------------------------------------------------------
 # NOVA Legal snippet
-'.source.c, .source.cpp, .source.cc, .souce.objcpp, .source.objc':
+'.source.c, .source.cpp, .source.cc, .source.h, .souce.objcpp, .source.objc':
   'NOVA Legal Header':
     'prefix': 'nova-legal'
     'body': """
       // -*-C++-*-
       //-----------------------------------------------------------------------------
       /*
-          Author(s):    ${1:Ola Nordmann}
-          Created:      ${2:Date}
+          Author(s):    ${1:Eirik Schultz}
+          Created:      ${2:{Date}}
           Release: 	    $Revision$
           Modified:	    $Date$
           Path:    	    $Source$

@@ -4,7 +4,14 @@
       default_beautifier: "clang-format"
     general:
       _analyticsUserId: "a209d48f-b747-4e0d-b731-55f94a76c0ab"
-  "atom-rtags-plus": {}
+  "atom-rtags-plus":
+    liveParseFileTypes: [
+      "source.cc"
+      "source.c"
+      "source.cpp"
+      "source.h"
+      "source.hpp"
+    ]
   "atomic-rtags":
     rdmAutoSpawn: true
   "autocomplete-clang":
@@ -13,8 +20,12 @@
       "./include"
       "./inc"
     ]
+    includeSystemHeadersDocumentation: true
   "autocomplete-plus":
+    backspaceTriggersAutocomplete: true
     confirmCompletion: "tab always, enter when suggestion explicitly selected"
+  "browser-plus":
+    homepage: "http://www.google.com"
   build:
     beepWhenDone: true
     notificationOnRefresh: true
@@ -38,7 +49,6 @@
         "h"
       ]
     disabledPackages: [
-      "whitespace"
       "metrics"
       "atom-debugger"
       "emacs-plus"
@@ -47,15 +57,22 @@
       "atom-rtags"
       "atomic-rtags"
       "linter-gcc"
-      "linter-write-good"
       "linter-less"
       "linter-clang"
       "linter-mixed-indent"
       "tool-bar"
-      "project-plus"
       "editorconfig"
       "language-cpp14"
       "tree-view-git-branch"
+      "linter-write-good"
+      "whitespace"
+      "busy-signal"
+      "dbg"
+      "dbg-gdb"
+      "output-panel"
+      "platformio-ide-terminal"
+      "autocomplete-clang"
+      "emmet"
     ]
     ignoredNames: [
       ".git"
@@ -69,6 +86,7 @@
       ".gcc-flags.json"
       ""
     ]
+    openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [
       "git-blame"
       "atom-beautify"
@@ -80,15 +98,19 @@
       "dbg"
       "atom-keyboard-macros"
       "git-time-machine"
+      "browser-plus"
     ]
     projectHome: "/export/home/esc/ws/"
     telemetryConsent: "limited"
-  "custom-title":
-    template: "<%= username %> @ <%= hostname %> : <%= fileName %><% if (projectPath) { %> - <%= projectPath %><% } %>"
+  "custom-window-title":
+    template: "<%= username %>@<%= hostname %> : <% if (projectName) { %> <%= projectName %> <% } %><% if (gitHead) %><% { %> [<%= gitHead %>] <% } %> <%= fileName %><% if (filePath) { %> - <%= filePath %> <%  } %>"
   "disable-keybindings": {}
+  docblockr:
+    extra_tags: [
+      "@date {{date}}"
+      "@author esc"
+    ]
   editor:
-    atomicSoftTabs: false
-    autoIndent: false
     autoIndentOnPaste: false
     fontFamily: "hack"
     fontSize: 12
@@ -102,10 +124,13 @@
     zoomFontWhenCtrlScrolling: false
   "exception-reporting":
     userId: "1251050e-050e-0168-0c14-a8fb412c3765"
+  "file-icons":
+    coloured: false
   fonts:
     fontFamily: "Hack"
   "git-blame":
-    customCommitUrlTemplateString: "http://nanna/cgi-bin/gitweb.cgi?p=<%- project %>/<%- repo %>.git;a=commit;h=<%- revision %>"
+    columnWidth: 227
+    customCommitUrlTemplateString: "http://nanna/git/?p=<%- project %>/<%- repo %>.git;a=commit;h=<%- revision %>"
     dateFormatString: "DD-MM-YYYY"
     showOnlyLastNames: true
     useCustomUrlTemplateIfStandardRemotesFail: true
@@ -124,6 +149,8 @@
     remoteInteractions:
       pullBeforePush: true
       pullRebase: true
+  "incremental-search":
+    instantSearch: true
   linter: {}
   "linter-clang":
     clangIncludePaths: [
@@ -149,9 +176,10 @@
     forceIndentationType: "spaces"
     ignoreComments: true
   "linter-ui-default":
-    panelHeight: 161
-    showPanel: true
+    panelHeight: 256
     showProviderName: true
+    statusBarRepresents: "Current File"
+    useBusySignal: false
   "linter-write-good":
     severityLevel: "Info"
   minimap:
@@ -174,13 +202,15 @@
     dismissableReloadNotifications: false
   "platformio-ide-terminal":
     core:
-      autoRunCommand: "export PATH=/export/home/esc/.atom/packages/platformio-ide/penv/bin:/usr/lib64/qt-3.3/bin:/usr/lib64/ccache:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/sbin:/export/home/esc/bin:/export/home/esc/scripts:/usr/local/Trolltech/Qt-4/bin:/export/home/esc/ws/Install2/nova-os/packages/scripts/scripts:/export/home/esc/.local/bin:/export/home/esc/bin:/usr/local/bin"
+      workingDirectory: "Active File"
   "project-manager":
     alwaysOpenInSameWindow: true
     sortBy: "group"
   "project-plus":
     autoDiscover: false
     showPath: true
+  "show-invisibles-plus":
+    borders: {}
   "split-diff":
     diffWords: true
     hideTreeView: true
@@ -218,7 +248,8 @@
     fontSize: "12"
     titleTemplate: "Term: {{ hostName }}"
   "terminal-fusion":
-    core: {}
+    core:
+      mapTerminalsTo: "Folder"
     style:
       fontFamily: "Hack"
       fontSize: "12"
@@ -241,6 +272,9 @@
     separator: true
   welcome:
     showOnStartup: false
+  zentabs:
+    maximumOpenedTabs: 6
+    neverCloseUnsaved: true
 ".c.source":
   editor:
     showIndentGuide: true
