@@ -149,6 +149,9 @@
     remoteInteractions:
       pullBeforePush: true
       pullRebase: true
+  hidpi:
+    osScaleFactor: 1.4
+    scaleFactor: 1.4
   "incremental-search":
     instantSearch: true
   linter: {}
